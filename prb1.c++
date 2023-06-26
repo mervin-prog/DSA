@@ -20,16 +20,16 @@ int main()
     }
     
     //method -1 : no extra space
-    //int ptr=-1;
-    // for(int i=0; i<num; i++){
-    //     if(arr[i]==0){
-    //         ptr++;
-    //         swap(arr[i],arr[ptr]);
-    //     }
-    // }
-    // for(int i=0; i<num; i++){
-    //     cout<<arr[i]<<" ";
-    // }
+    int ptr=-1;
+    for(int i=0; i<num; i++){
+        if(arr[i]==0){
+            ptr++;
+            swap(arr[i],arr[ptr]);
+        }
+    }
+    for(int i=0; i<num; i++){
+        cout<<arr[i]<<" ";
+    }
 
     //method-2 : extra space(sorting)
     // sort(arr,arr+num);
